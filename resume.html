@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Scoring | HireSight AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <h2>AI Resume Scoring</h2>
+        <p class="page-subtitle">
+            Upload job description and candidate resume
+        </p>
+
+        <div class="form-card">
+            <label>Job Description</label>
+            <textarea placeholder="Paste job description here..."></textarea>
+
+            <label>Upload Resume</label>
+            <input type="file">
+
+            <button class="cta-btn analyze-btn" onclick="analyzeResume()">
+                Analyze Resume
+            </button>
+        </div>
+
+        <div class="result-card" id="resultCard">
+            <h3>Candidate Evaluation</h3>
+
+            <div class="score-grid">
+                <div class="score-box">
+                    <span class="score">82</span>
+                    <p>Overall Score</p>
+                </div>
+                <div class="score-box">
+                    <span class="score">78%</span>
+                    <p>Skill Match</p>
+                </div>
+                <div class="score-box">
+                    <span class="score">4.2 yrs</span>
+                    <p>Experience</p>
+                </div>
+            </div>
+
+            <p class="ai-text">
+                Strong skill alignment with required technologies. 
+                Experience slightly below ideal but acceptable for role.
+            </p>
+
+            <button class="secondary-btn" onclick="location.href='analytics.html'">
+                View Employee Analytics →
+            </button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
